@@ -1,8 +1,5 @@
 
-# coding: utf-8
-
-# In[91]:
-
+#!/usr/bin/python
 ###########################################
 # Sort a list of distinct integers
 # such that: a < b > c < d > e <
@@ -13,9 +10,6 @@
 # Daniel Kristiyanto
 ###########################################
 
-
-# In[92]:
-
 def zigzag(a):
     a.sort()
     if not a or len(a) < 3: return a
@@ -24,13 +18,19 @@ def zigzag(a):
     return a
 
 
-# In[97]:
+def zigzag(a):
+    a.sort()
+    if not a or len(a) < 3: return a
+    for i in range(0,len(a)-2,2):
+        a[i+1], a[i+2] = a[i+2], a[i+1]
+    return a
 
-s = [4,2,90,1]
-zigzag(s)
+def main():
+    s = [4,3,7,8,6,2,1]
+    output = zigzag(s)
 
-
-# In[ ]:
+if __name__ == '__main__':
+    main()
 
 
 

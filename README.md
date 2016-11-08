@@ -47,7 +47,12 @@ def zigzag(a):
         a[i+1], a[i+2] = a[i+2], a[i+1]
     return a
 
-s = [4,3,7,8,6,2,1]
-output = zigzag(s)
+def main():
+    s = [4,3,7,8,6,2,1]
+    output = zigzag(s)
+
+if __name__ == '__main__':
+    main()
+
 
 ```
