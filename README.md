@@ -38,8 +38,6 @@ Codes:
 ###########################################
 
 
-
-
 def zigzag(a):
     a.sort()
     if not a or len(a) < 3: return a
@@ -47,7 +45,7 @@ def zigzag(a):
         a[i+1], a[i+2] = a[i+2], a[i+1]
     return a
 
-s = [4,2,90,1]
-zigzag(s)
+s = [4,3,7,8,6,2,1]
+output = zigzag(s)
 
 ```
