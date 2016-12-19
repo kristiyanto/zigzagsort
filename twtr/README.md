@@ -6,6 +6,8 @@
 
 An algorithm to sort an array of distinct integer in a zig-zag manner such that `a < b > c < d > e <`
 
+__ This algorithm doesn't work if input are not unique. 
+
 e.g
 ```python
 input = [4,3,7,8,6,2,1]
